@@ -1,0 +1,15 @@
+.embedded-chat-container {
+  position: fixed;
+  bottom: 20px; /* Adjust the desired margin */
+  right: 20px; /* Adjust the desired margin */
+  z-index: 9999;
+
+
+}
+
+.embedded-chat-iframe {
+  width: 400px; /* Adjust the desired width */
+  height: 480px; /* Adjust the desired height */
+  margin-right: 32px;
+  margin-top: 32px;
+}
