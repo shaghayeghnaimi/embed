@@ -25,7 +25,7 @@ padding:4px
   width: fit-content;
   height: fit-content;
   background-color: rgb(238, 239, 252);
-  border-radius: 16px;
+  border-radius: 8px;
 
 }
 
@@ -35,7 +35,7 @@ padding:4px
   width: 400px;
   border: 0px solid rgb(247, 174, 174, 0) !important;
   margin: 0 !important;
-  border-radius: 16px;
+  border-radius: 8px;
   box-shadow: -5px 4px #c8c7c7;
   padding: 0 !important;
   position: fixed;
