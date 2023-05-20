@@ -1,23 +1,47 @@
-import React from 'react';
-import './App.css'
+import React, { useState } from "react";
+import "./App.css";
+import LiveHelpIcon from "@mui/icons-material/LiveHelp";
+import CloseIcon from "@mui/icons-material/Close";
+import IconButton from "@mui/material/IconButton";
 
-const EmbeddedChatPage = () => {
+const ChatApp = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleChat = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <div className='example-website'>
-    <div className="embedded-chat-container">
-      <iframe
-src='/D:/job/Chatpage/src/App.js'
-        title="Chat Page"
-        className="embedded-chat-iframe"
-      />
+    <div className="chat-app">
+      <button>
+      <IconButton aria-label="delete" color="primary" onClick={toggleChat}>
+        {isOpen ? (
+          <CloseIcon fontSize="large" sx={{color:"white"}} />
+        ) : (
+          <LiveHelpIcon fontSize="large" sx={{color:"white"}} />
+        )}
+      </IconButton>
+      </button>
 
-    <div className='example-website-container'>
-
-    </div>
-  </div>
-
+      {isOpen && (
+        <iframe
+          src="
+          https://shaghayeghnaimi.github.io/Chat-page/"
+          title="Chat Page"
+          className="embedded-chat-iframe"
+        />
+      )}
     </div>
   );
 };
 
-export default EmbeddedChatPage;
+function App() {
+  return (
+    <div className="App">
+      {/* Your website content */}
+      <ChatApp />
+    </div>
+  );
+}
+
+export default App;

@@ -1,15 +1,53 @@
-.embedded-chat-container {
-  position: fixed;
-  bottom: 20px; /* Adjust the desired margin */
-  right: 20px; /* Adjust the desired margin */
-  z-index: 9999;
+.App {
+  text-align: center;
 
+}
+
+.chat-app {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+button{
+background-color: rgb(58, 65, 250) !important;
+border: 0px solid !important;
+border-radius: 355px;
+padding:4px
+}
+.MuiButtonBase-root:hover {
+  background-color: rgb(208, 248, 248);
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+
+}
+.chat-window {
+
+  width: fit-content;
+  height: fit-content;
+  background-color: rgb(238, 239, 252);
+  border-radius: 16px;
 
 }
 
 .embedded-chat-iframe {
-  width: 400px; /* Adjust the desired width */
-  height: 480px; /* Adjust the desired height */
-  margin-right: 32px;
-  margin-top: 32px;
+  margin-top: 8px;
+  height: 500px;
+  width: 400px;
+  border: 0px solid rgb(247, 174, 174, 0) !important;
+  margin: 0 !important;
+  border-radius: 16px;
+  box-shadow: -5px 4px #c8c7c7;
+  padding: 0 !important;
+  position: fixed;
+
+  bottom: 80px;
+  right: 20px;
 }
+
+@keyframes horizontal-shaking {
+  0% { transform: translateX(0) }
+  25% { transform: translateX(5px) }
+  50% { transform: translateX(-5px) }
+  75% { transform: translateX(5px) }
+  100% { transform: translateX(0) }
+ }
