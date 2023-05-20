@@ -7,6 +7,7 @@
   position: fixed;
   bottom: 20px;
   right: 20px;
+  overflow: hidden !important;
 }
 button{
 background-color: rgb(58, 65, 250) !important;
@@ -16,32 +17,25 @@ padding:4px
 }
 .MuiButtonBase-root:hover {
   background-color: rgb(208, 248, 248);
-  animation: shake 0.5s;
+  transition: cubic-bezier(0.165, 0.84, 0.44, 1);
   animation-iteration-count: infinite;
 
 }
-.chat-window {
 
-  width: fit-content;
-  height: fit-content;
-  background-color: rgb(238, 239, 252);
-  border-radius: 8px;
-
-}
 
 .embedded-chat-iframe {
   margin-top: 8px;
-  height: 500px;
+  height: 560px;
   width: 400px;
   border: 0px solid rgb(247, 174, 174, 0) !important;
   margin: 0 !important;
   border-radius: 8px;
-  box-shadow: -5px 4px #c8c7c7;
+  box-shadow:  4px 4px 4px 1px rgba(0, 0, 0, 0.2);
   padding: 0 !important;
   position: fixed;
-
   bottom: 80px;
   right: 20px;
+  overflow: hidden;
 }
 
 @keyframes horizontal-shaking {

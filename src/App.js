@@ -14,23 +14,16 @@ const ChatApp = () => {
   return (
     <div className="chat-app">
       <button>
-      <IconButton aria-label="delete" color="primary" onClick={toggleChat}>
-        {isOpen ? (
-          <CloseIcon fontSize="large" sx={{color:"white"}} />
-        ) : (
-          <LiveHelpIcon fontSize="large" sx={{color:"white"}} />
-        )}
-      </IconButton>
+        <IconButton aria-label="delete" color="primary" onClick={toggleChat}>
+          {isOpen ? (
+            <CloseIcon fontSize="large" sx={{ color: "white" }} />
+          ) : (
+            <LiveHelpIcon fontSize="large" sx={{ color: "white" }} />
+          )}
+        </IconButton>
       </button>
 
-      {isOpen && (
-        <iframe
-          src="
-          https://shaghayeghnaimi.github.io/Chat-page/"
-          title="Chat Page"
-          className="embedded-chat-iframe"
-        />
-      )}
+      {isOpen && <div id="iframe-area"></div>}
     </div>
   );
 };
