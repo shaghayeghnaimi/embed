@@ -10,7 +10,7 @@
       content="Web site created using create-react-app"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
+   <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
@@ -25,28 +25,11 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
-    <script>
-  var iframe = document.createElement('iframe');
-  
-  iframe.src = "https://shaghayeghnaimi.github.io/Chat-page/";
-  
-  iframe.style.width = '350px';
-  iframe.style.height = '450px';
-  iframe.style.position = 'fixed';
-  iframe.style.bottom = '20px';
-  iframe.style.right = '20px';
-  iframe.style.zIndex = '9999';
-    iframe.style.border = '1px solid #ccc';
-  iframe.style.boxShadow = '0 0 5px rgba(0, 0, 0, 0.1)';
-  
-  
-  var iframePlace = document.getElementById("iframe-area");
-  iframePlace.appendChild(iframe);
-  </script>
+    <script src="index.js"></script>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div class="root"></div>
+  
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
